@@ -28,17 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             Username = new Label();
             Loginbtn = new Button();
             enteryourusername = new TextBox();
             enteryourpassword = new TextBox();
             Password = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // Username
             // 
             Username.AutoSize = true;
-            Username.Location = new Point(290, 106);
+            Username.Location = new Point(85, 160);
             Username.Name = "Username";
             Username.Size = new Size(75, 20);
             Username.TabIndex = 0;
@@ -48,7 +51,7 @@
             // Loginbtn
             // 
             Loginbtn.ForeColor = SystemColors.ControlText;
-            Loginbtn.Location = new Point(361, 225);
+            Loginbtn.Location = new Point(141, 289);
             Loginbtn.Name = "Loginbtn";
             Loginbtn.Size = new Size(94, 29);
             Loginbtn.TabIndex = 1;
@@ -58,33 +61,49 @@
             // 
             // enteryourusername
             // 
-            enteryourusername.Location = new Point(290, 129);
+            enteryourusername.ForeColor = SystemColors.WindowFrame;
+            enteryourusername.Location = new Point(85, 183);
             enteryourusername.Name = "enteryourusername";
             enteryourusername.Size = new Size(242, 27);
             enteryourusername.TabIndex = 2;
+            enteryourusername.Text = "enter your username";
             // 
             // enteryourpassword
             // 
-            enteryourpassword.Location = new Point(290, 192);
+            enteryourpassword.ForeColor = SystemColors.WindowFrame;
+            enteryourpassword.Location = new Point(85, 245);
             enteryourpassword.Name = "enteryourpassword";
             enteryourpassword.Size = new Size(242, 27);
             enteryourpassword.TabIndex = 3;
+            enteryourpassword.Text = "enter your password";
             // 
             // Password
             // 
             Password.AutoSize = true;
-            Password.Location = new Point(290, 169);
+            Password.Location = new Point(85, 222);
             Password.Name = "Password";
             Password.Size = new Size(70, 20);
             Password.TabIndex = 4;
             Password.Text = "Password";
             Password.Click += label2_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(390, 78);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(369, 286);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.Bisque;
+            ClientSize = new Size(808, 430);
+            Controls.Add(pictureBox1);
             Controls.Add(Password);
             Controls.Add(enteryourpassword);
             Controls.Add(enteryourusername);
@@ -94,6 +113,7 @@
             Name = "Login";
             Text = "Login";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -105,5 +125,6 @@
         private TextBox enteryourusername;
         private TextBox enteryourpassword;
         private Label Password;
+        private PictureBox pictureBox1;
     }
 }

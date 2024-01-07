@@ -19,7 +19,6 @@ namespace BrewHub
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Simulate admin and staff roles with hardcoded usernames and passwords
             string adminUsername = "admin";
             string adminPassword = "admin123";
 
@@ -31,15 +30,13 @@ namespace BrewHub
 
             if (enteredUsername == adminUsername && enteredPassword == adminPassword)
             {
-                // Common action for both admin and staff (for example, displaying a message)
                 MessageBox.Show("Login successful! Welcome, Admin.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide(); // Hide the login form
+                this.Hide(); 
             }
             else if (enteredUsername == staffUsername && enteredPassword == staffPassword)
             {
-                // Common action for both admin and staff (for example, displaying a message)
                 MessageBox.Show("Login successful! Welcome, Staff.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide(); // Hide the login form
+                this.Hide(); 
             }
             else
             {
