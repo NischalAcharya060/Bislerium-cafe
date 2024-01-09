@@ -1,4 +1,5 @@
-﻿namespace BrewHub
+﻿
+namespace BrewHub
 {
     partial class OrderForm
     {
@@ -45,7 +46,7 @@
             Ginger_ads_ins = new CheckBox();
             checkBox10 = new CheckBox();
             Quantity_lbl = new Label();
-            Name = new Label();
+            Name_lbl = new Label();
             Name_txt_box = new TextBox();
             Address_txt_box = new TextBox();
             Address_lbl = new Label();
@@ -135,7 +136,6 @@
             Coffee_lbl.Size = new Size(84, 31);
             Coffee_lbl.TabIndex = 8;
             Coffee_lbl.Text = "Coffee";
-            Coffee_lbl.Click += label1_Click;
             // 
             // Ads_Inslbl
             // 
@@ -219,14 +219,14 @@
             // 
             // Name
             // 
-            Name.AutoSize = true;
-            Name.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Name.Location = new Point(448, 48);
-            Name.Name = "Name";
-            Name.Size = new Size(71, 28);
-            Name.TabIndex = 17;
-            Name.Text = "Name:";
-            Name.Click += label1_Click_1;
+            Name_lbl.AutoSize = true;
+            Name_lbl.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Name_lbl.Location = new Point(448, 48);
+            Name_lbl.Name = "Name";
+            Name_lbl.Size = new Size(71, 28);
+            Name_lbl.TabIndex = 17;
+            Name_lbl.Text = "Name:";
+            Name_lbl.Click += label1_Click_1;
             // 
             // Name_txt_box
             // 
@@ -349,7 +349,7 @@
             Controls.Add(Address_txt_box);
             Controls.Add(Address_lbl);
             Controls.Add(Name_txt_box);
-            Controls.Add(Name);
+            Controls.Add(Name_lbl);
             Controls.Add(Quantity_lbl);
             Controls.Add(checkBox10);
             Controls.Add(Ginger_ads_ins);
@@ -406,5 +406,6 @@
         private Button total_btn;
         private Button exit_btn;
         private Button reset_btn;
+        private EventHandler label1_Click_1;
     }
 }
