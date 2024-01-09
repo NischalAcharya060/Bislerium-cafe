@@ -66,7 +66,6 @@
             enteryourusername.Name = "enteryourusername";
             enteryourusername.Size = new Size(242, 27);
             enteryourusername.TabIndex = 2;
-            enteryourusername.Text = "enter your username";
             // 
             // enteryourpassword
             // 
@@ -75,7 +74,6 @@
             enteryourpassword.Name = "enteryourpassword";
             enteryourpassword.Size = new Size(242, 27);
             enteryourpassword.TabIndex = 3;
-            enteryourpassword.Text = "enter your password";
             // 
             // Password
             // 

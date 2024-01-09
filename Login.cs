@@ -19,28 +19,39 @@ namespace BrewHub
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string adminUsername = "admin";
-            string adminPassword = "admin123";
-
-            string staffUsername = "staff";
-            string staffPassword = "staff123";
-
-            string enteredUsername = enteryourusername.Text;
-            string enteredPassword = enteryourpassword.Text;
-
-            if (enteredUsername == adminUsername && enteredPassword == adminPassword)
+            try
             {
-                MessageBox.Show("Login successful! Welcome, Admin.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide(); 
+                string adminUsername = "admin";
+                string adminPassword = "admin123";
+
+                string staffUsername = "staff";
+                string staffPassword = "staff123";
+
+                string enteredUsername = enteryourusername.Text;
+                string enteredPassword = enteryourpassword.Text;
+
+                if (enteredUsername == adminUsername && enteredPassword == adminPassword)
+                {
+                    MessageBox.Show("Login successful! Welcome, Admin.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LandingPage landingPage = new LandingPage();
+                    landingPage.Show();
+                    this.Hide();
+                }
+                else if (enteredUsername == staffUsername && enteredPassword == staffPassword)
+                {
+                    MessageBox.Show("Login successful! Welcome, Staff.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LandingPage landingPage = new LandingPage();
+                    landingPage.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid username or password", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else if (enteredUsername == staffUsername && enteredPassword == staffPassword)
+            catch (Exception ex)
             {
-                MessageBox.Show("Login successful! Welcome, Staff.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide(); 
-            }
-            else
-            {
-                MessageBox.Show("Invalid username or password", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
