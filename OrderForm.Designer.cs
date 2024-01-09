@@ -395,7 +395,7 @@
         private CheckBox Ginger_ads_ins;
         private CheckBox checkBox10;
         private Label Quantity_lbl;
-        private Label Name;
+        private Label Name_lbl;
         private TextBox Name_txt_box;
         private TextBox Address_txt_box;
         private Label Address_lbl;
