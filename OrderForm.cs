@@ -63,14 +63,12 @@ namespace BrewHub
 
         private void total_btn_Click(object sender, EventArgs e)
         {
-            // Implement logic to calculate the total based on selected items and quantities
             decimal total = CalculateTotal();
-            total_sum.Text = total.ToString("C"); // Format as currency and display in the total_sum label
+            total_sum.Text = total.ToString("C"); 
         }
 
         private decimal CalculateTotal()
         {
-            // Implement the logic to calculate the total based on selected items and quantities
             decimal total = 0;
 
             // Calculate coffee prices
@@ -106,19 +104,23 @@ namespace BrewHub
 
         private void exit_btn_Click(object sender, EventArgs e)
         {
-            // Implement logic to close the form
-            this.Close();
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         private void reset_btn_Click(object sender, EventArgs e)
         {
-            // Implement logic to reset all input fields to their initial state
             InitializeUI();
         }
 
         private void OrderForm_Load(object sender, EventArgs e)
         {
-            // You can initialize or perform actions when the form loads
+            MessageBox.Show("Welcome to BrewHub! Please enter your order details.", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
     }
 }
