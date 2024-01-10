@@ -140,6 +140,7 @@
             ForeColor = SystemColors.ControlText;
             Name = "LandingPage";
             Text = "LandingPage";
+            Load += LandingPage_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

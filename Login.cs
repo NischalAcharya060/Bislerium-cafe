@@ -19,6 +19,7 @@ namespace BrewHub
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // TODO: Implement button1_Click logic for user login
             try
             {
                 string adminUsername = "admin";
@@ -54,6 +55,7 @@ namespace BrewHub
                 MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        // TODO: Add secure password handling, user authentication, and other improvements
 
 
         private void label2_Click(object sender, EventArgs e)

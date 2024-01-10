@@ -226,7 +226,7 @@ namespace BrewHub
             Name_lbl.Size = new Size(71, 28);
             Name_lbl.TabIndex = 17;
             Name_lbl.Text = "Name:";
-            Name_lbl.Click += label1_Click_1;
+            
             // 
             // Name_txt_box
             // 
@@ -406,6 +406,5 @@ namespace BrewHub
         private Button total_btn;
         private Button exit_btn;
         private Button reset_btn;
-        private EventHandler label1_Click_1;
     }
 }

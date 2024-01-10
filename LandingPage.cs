@@ -19,6 +19,7 @@ namespace BrewHub
 
         private void OrderForm_link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            // TODO: Implement OrderForm_link_LinkClicked logic
             OrderForm orderForm = new OrderForm();
             orderForm.Show();
             this.Hide();
@@ -26,6 +27,7 @@ namespace BrewHub
 
         private void Login_page_link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            // TODO: Implement Login_page_link_LinkClicked logic
             Login loginForm = new Login();
             loginForm.Show();
             this.Hide();
@@ -36,5 +38,11 @@ namespace BrewHub
         {
 
         }
+
+        private void LandingPage_Load(object sender, EventArgs e)
+        {
+
+        }
+        // TODO: Add more links, improve UI layout, and handle navigation between forms
     }
 }

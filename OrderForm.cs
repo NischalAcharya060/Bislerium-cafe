@@ -36,6 +36,7 @@ namespace BrewHub
         {
             InitializeComponent();
             InitializeUI();
+            // TODO: Initialize the UI, set default values, etc.
         }
 
         private void InitializeUI()
@@ -63,6 +64,7 @@ namespace BrewHub
 
         private void total_btn_Click(object sender, EventArgs e)
         {
+            // TODO: Implement total_btn_Click logic
             decimal total = CalculateTotal();
             total_sum.Text = total.ToString("C"); 
         }
@@ -104,6 +106,7 @@ namespace BrewHub
 
         private void exit_btn_Click(object sender, EventArgs e)
         {
+            // TODO: Implement exit_btn_Click logic with confirmation
             DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
@@ -114,13 +117,16 @@ namespace BrewHub
 
         private void reset_btn_Click(object sender, EventArgs e)
         {
+            // TODO: Implement reset_btn_Click logic
             InitializeUI();
         }
 
         private void OrderForm_Load(object sender, EventArgs e)
         {
+            // TODO: Show a welcome message or perform actions when the form loads
             MessageBox.Show("Welcome to BrewHub! Please enter your order details.", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+        // TODO: Add validation methods, save order details, and handle edge cases
 
     }
 }
