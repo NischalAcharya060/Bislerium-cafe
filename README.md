@@ -1,6 +1,6 @@
-# BrewHub
+# Bislerium-cafe
 
-BrewHub is a simple C# application for managing orders in a coffee shop. This application provides a user-friendly interface for customers to place their coffee orders.
+Bislerium-cafe is a simple C# application for managing orders in a coffee shop. This application provides a user-friendly interface for customers to place their coffee orders.
 
 ## Project Overview
 
@@ -68,4 +68,4 @@ The application consists of several features, including:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/NischalAcharya060/BrewHub.git
+   git clone https://github.com/NischalAcharya060/Bislerium-cafe.git
